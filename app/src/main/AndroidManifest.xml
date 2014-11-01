@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stein.jrotc.app" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--
+     Creates a custom permission so only this app can receive its messages.
+
+     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+           where PACKAGE is the application's package name.
+    -->
+    <permission
+        android:name="com.stein.jrotc.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.stein.jrotc.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".about_program"
+            android:label="@string/title_activity_about_program" >
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <activity
+            android:name=".BrigadeInfo"
+            android:label="@string/title_activity_brigade_info" >
+        </activity>
+        <activity
+            android:name=".CurrentInformation"
+            android:label="@string/title_activity_current_information" >
+        </activity>
+        <activity
+            android:name=".Brigade"
+            android:label="@string/title_activity_brigade" >
+        </activity>
+        <activity
+            android:name=".FirstBatallion"
+            android:label="@string/title_activity_first_batallion" >
+        </activity>
+        <activity
+            android:name=".SecondBatallion"
+            android:label="@string/title_activity_second_batallion" >
+        </activity>
+        <activity
+            android:name="com.stein.a_company"
+            android:label="@string/title_activity_a_company" >
+        </activity>
+        <activity
+            android:name=".b_company"
+            android:label="@string/title_activity_b_company" >
+        </activity>
+        <activity
+            android:name=".aco_fst_p"
+            android:label="@string/title_activity_aco_fst_p" >
+        </activity>
+        <activity
+            android:name=".aco_snd_p"
+            android:label="@string/title_activity_aco_snd_p" >
+        </activity>
+        <activity
+            android:name=".bco_fst"
+            android:label="@string/title_activity_bco_fst" >
+        </activity>
+        <activity
+            android:name=".bco_snd"
+            android:label="@string/title_activity_bco_snd" >
+        </activity>
+        <activity
+            android:name=".bco_trd"
+            android:label="@string/title_activity_bco_trd" >
+        </activity>
+        <activity
+            android:name=".c_company"
+            android:label="@string/title_activity_c_company" >
+        </activity>
+        <activity
+            android:name=".d_company"
+            android:label="@string/title_activity_d_company" >
+        </activity>
+        <activity
+            android:name="com.stein.cco_fst"
+            android:label="@string/title_activity_cco_fst" >
+        </activity>
+        <activity
+            android:name=".cco_snd"
+            android:label="@string/title_activity_cco_snd" >
+        </activity>
+        <activity
+            android:name="com.stein.cco_trd"
+            android:label="@string/title_activity_cco_trd" >
+        </activity>
+        <activity
+            android:name=".dco_fst"
+            android:label="@string/title_activity_dco_fst" >
+        </activity>
+        <activity
+            android:name=".dco_trd"
+            android:label="@string/title_activity_dco_trd" >
+        </activity>
+        <activity
+            android:name=".aco_trd"
+            android:label="@string/title_activity_aco_trd" >
+        </activity>
+        <activity
+            android:name=".dco_snd"
+            android:label="@string/title_activity_dco_snd" >
+        </activity>
+        <activity
+            android:name=".aboutDevelopers"
+            android:label="@string/title_activity_about_developers" >
+        </activity>
+        <activity
+            android:name=".BandInfo"
+            android:label="@string/title_activity_band_info" >
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <!--
+      BroadcastReceiver that will receive intents from GCM
+      services and handle them to the custom IntentService.
+
+      The com.google.android.c2dm.permission.SEND permission is necessary
+      so only GCM services can send data messages for the app.
+        -->
+        <receiver
+            android:name=".App42GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- Your package name here -->
+                <category android:name="com.stein.jrotc.app" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+          Application-specific subclass of GCMBaseIntentService that will
+          handle received messages.
+
+          By default, it must be named .GCMIntentService, unless the
+          application uses a custom BroadcastReceiver that redefines its name.
+        -->
+        <service android:name=".App42GCMService" >
+            <meta-data
+                android:name="onMessageOpen"
+                android:value="com.stein.jrotc.app.MessageActivity" />
+        </service>
+
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+        <activity
+            android:name=".drill14"
+            android:label="@string/title_activity_drill14" >
+        </activity>
+    </application>
+
+</manifest>

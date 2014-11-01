@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    android:background="#070707">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The JROTC program in the high school is one of the single most comprehensive courses in the school. The program teaches a broad spectrum of subjects, including American history, how government works, our Constitution, technology awareness, and current events.  When students are involved in the JROTC program, whatever they do, they begin doing a little bit better. You can see them standing a little taller and looking more sure of themselves. They take a little more pride in how they look, in how they carry themselves and in how they speak and behave.  The students are under no obligation to enter the military. We try to help them take their own best choices in life, find their own direction, and work toward their own personal growth.  Perhaps the most unusual aspect of the JROTC program is the fact that we don't just teach. We also train.   We train our students in personal skills like studying effectively, taking tests, developing winning habits, job interviewing, overcoming fears of failure, and setting goals for themselves. We also train them in leadership skills like motivating others, making decisions, planning, speaking and writing effectively, and working as a member of a team. Colleges know they're getting a good citizen who's eager to work hard.  Now more than ever, young people need structure and direction. They need to belong to something that supports their explorations while setting reasonable limits. The JROTC program gives them something outside their families and themselves they can depend on and feel at home with. It gives them rules they can accept, goals they're willing to pursue, and interests that engage their minds and spirits."
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt" />
+</RelativeLayout>
+</ScrollView>
