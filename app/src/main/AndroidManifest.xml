@@ -9,19 +9,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <!-- GCM requires a Google account. -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
-    <!-- Keeps the processor from sleeping when a message is received. -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <!--
-     Creates a custom permission so only this app can receive its messages.
-
-     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
-           where PACKAGE is the application's package name.
-    -->
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
     <permission
         android:name="com.stein.jrotc.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
@@ -144,22 +133,6 @@
             android:label="@string/title_activity_band_info" >
         </activity>
 
-
-        <!--
-      BroadcastReceiver that will receive intents from GCM
-      services and handle them to the custom IntentService.
-
-      The com.google.android.c2dm.permission.SEND permission is necessary
-      so only GCM services can send data messages for the app.
-        -->
-
-        <!--
-          Application-specific subclass of GCMBaseIntentService that will
-          handle received messages.
-
-          By default, it must be named .GCMIntentService, unless the
-          application uses a custom BroadcastReceiver that redefines its name.
-        -->
 
 
         <activity

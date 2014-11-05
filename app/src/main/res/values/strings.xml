@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+   <!-- To future developers- updating the app is simple. Simply replace the names/ranks in the strings below
+            To the new values for your year. Then GIT commit to your year IE my year was 2014-2015, the year
+            after would be 2015-2016 and so on and so forth ~Rudi -->
     <string name="app_name">JROTC</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_about_program">About the Program</string>

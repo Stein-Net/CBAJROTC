@@ -5,8 +5,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends Activity {
+/**
+ *  This Application was written by Gregory Rudolph in 2013,
+ *  then updated in 2014 for the new CBA Chain of command.
+ *
+ *  DO NOT CHANGE THESE BUTTONS UNLESS YOU KNOW WHAT YOU ARE DOING
+ *
+ *  To update for future years, see Strings.xml file
+ *
+ *  To update cover image- replace brigadeimg.png in the Drawable folders
+ *
+ */
 
+public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
