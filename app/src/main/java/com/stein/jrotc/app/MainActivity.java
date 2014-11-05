@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
     public void openGallery(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-        finish();
+
 
     }
 
