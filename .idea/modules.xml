@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CBAJROTC.iml" filepath="$PROJECT_DIR$/CBAJROTC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JROTC.iml" filepath="$PROJECT_DIR$/JROTC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Push/Push.iml" filepath="$PROJECT_DIR$/Push/Push.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

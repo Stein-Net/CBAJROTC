@@ -2,52 +2,16 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/classes-cd5c207dc8ef29d9f70bdd2320eb6ca94d66fae6.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        dex="/Users/gregory/AndroidStudioProjects/CBAJROTC/app/build/intermediates/pre-dexed/debug/gcm-cd16fe5bed72cdf37b645641ec6ff3fb1397524a.jar"
+        jar="/Users/gregory/AndroidStudioProjects/CBAJROTC/app/libs/gcm.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
-    <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/gcm-15440c1de446df9ba2be7d883e4cf7037e44a0e0.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/libs/gcm.jar"
-        jumboMode="false"
-        revision="19.1.0"
+        revision="21.0.0"
         sha1="935e2bb99bb43be716cb7c3e3201a26174a98be0"/>
     <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/classes-448dd959a3a66b77a6d495be102cf67de6cce67a.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        dex="/Users/gregory/AndroidStudioProjects/CBAJROTC/app/build/intermediates/pre-dexed/debug/App42_ANDROID-1.6-79ba9e6dad11db14fbc7653da8c6a15b50df2102.jar"
+        jar="/Users/gregory/AndroidStudioProjects/CBAJROTC/app/libs/App42_ANDROID-1.6.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
-    <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/App42_ANDROID-1.6-c1f8b1261aaf3891fae72ccae77defa2ce9cf51b.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/libs/App42_ANDROID-1.6.jar"
-        jumboMode="false"
-        revision="19.1.0"
+        revision="21.0.0"
         sha1="ecc3d05389d26002837ecbe0466c5be64b6f75d5"/>
-    <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-4d897b13a222469f7b0b57245b2e28e3a2395775.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
-    <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/classes-9a1e56829ff26481beab2419bc1380721f60445d.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.0.77/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="b6a82434c1eca686607867cd906bcc80ed987837"/>
-    <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-4b17900d8c35f4aa218b296006639cc41010605c.jar"
-        jar="/Users/gregory/Development/adt/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
-    <item
-        dex="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/pre-dexed/debug/classes-1a1a0a7c460425f85ddd548d61b876fe22ed68fc.jar"
-        jar="/Users/gregory/AndroidStudioProjects/JROTC/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/20.0.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="e5531cb41e35c81a051a274945542f6b31e4c97e"/>
 
 </pre-dex-items>

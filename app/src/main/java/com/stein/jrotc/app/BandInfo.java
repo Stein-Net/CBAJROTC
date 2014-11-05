@@ -1,12 +1,10 @@
 package com.stein.jrotc.app;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 
-public class BandInfo extends ActionBarActivity {
+public class BandInfo extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
